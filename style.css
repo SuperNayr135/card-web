@@ -31,17 +31,36 @@
 .card {
   background-color: var(--bg-secondary-color);
   border: 5px solid var(--accent-color);
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
   margin: 10px;
+  max-width: 200px;
+  height: fit-content;
   border-radius: 5px;
   color: var(--text-color);
-}
-
-.header {
-  font-family: var(--header-text);
-  /* font-size: large; */
-}
-
-.text-content {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.title {
+  font-family: var(--header-text);
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 7px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  color: var(--bg-secondary-color);
+  transition: .5s;
 }
